@@ -1,4 +1,4 @@
-# course_adv_2_main
+# Expense Tracker App
 
 A new Flutter project.
 
