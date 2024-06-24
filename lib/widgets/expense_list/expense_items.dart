@@ -25,7 +25,7 @@ class ExpenseItem extends StatelessWidget {
             Row(
               children: [
                 Text(
-                    '\$${expense.amount.toStringAsFixed(2)}'), //it will only show 2 digits eg: 12.3556=> 12.35
+                    '\$ ${expense.amount.toStringAsFixed(2)}'), //it will only show 2 digits eg: 12.3556=> 12.35
                 const Spacer(),
                 Row(
                   children: [

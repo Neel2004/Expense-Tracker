@@ -1,4 +1,5 @@
 import 'package:course_adv_2_main/widgets/expenses.dart';
+// import 'package:flutter/services.dart'; used to stop app rotation
 import 'package:flutter/material.dart';
 
 var kColorScheme = ColorScheme.fromSeed(
@@ -11,6 +12,9 @@ var kDarkColorScheme = ColorScheme.fromSeed(
 );
 
 void main() {
+  // WidgetsFlutterBinding.ensureInitialized();  // Used to stop rotation
+  // SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp]).then(
+  //   (value) {
   runApp(
     MaterialApp(
       debugShowCheckedModeBanner: false,
@@ -56,4 +60,6 @@ void main() {
       home: const Expenses(),
     ),
   );
+  // },
+  // );
 }
